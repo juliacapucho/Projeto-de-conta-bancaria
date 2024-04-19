@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conta bancaria</title>
+</head>
+<body>
+    <h2>Criar Conta Bancária</h2>
+    <form id="accountForm">
+        <label for="ownerName">Nome do Proprietário:</label>
+         <input type="text" id="ownerName" required><br><br>
+        
+         <label for="initialBalance">Saldo Inicial:</label>
+         <input type="number" id="initialBalance" required><br><br>
+        
+         <button type="button" onclick="createAccount()">Criar Conta</button></form>
+
+         <h2>Operações</h2>
+<button onclick="deposit()">Depositar</button><button onclick="withdraw()">Sacar</button><button onclick="displayStatement()">Exibir Extrato</button>
+<div id="statement"></div>
+<script src="banco.js"></script>
+</body>
+</html>
